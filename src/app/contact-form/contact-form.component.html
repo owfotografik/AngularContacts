@@ -1,41 +1,41 @@
 <div>
-  <h2>{{model.firstName + " " + model.lastName}}</h2>
+  <h2>{{contact.firstName + " " + contact.lastName}}</h2>
   <form>
     <div class="form-group">
       <label>First Name</label>
-      <input type="text" class="form-control" name="firstName" [(ngModel)]="model.firstName">
+      <input type="text" class="form-control" name="firstName" [(ngModel)]="contact.firstName">
     </div>
     <div class="form-group">
       <label>Last Name</label>
-      <input type="text" class="form-control" name="lastName" [(ngModel)]="model.lastName">
+      <input type="text" class="form-control" name="lastName" [(ngModel)]="contact.lastName">
     </div>
     <div class="form-group">
       <label>Phone</label>
-      <input type="tel" class="form-control" name="phone" [(ngModel)]="model.phone">
+      <input type="tel" class="form-control" name="phone" [(ngModel)]="contact.phone">
     </div>
     <div class="form-group">
       <label>Email</label>
-      <input type="email" class="form-control" name="email" [(ngModel)]="model.email">
+      <input type="email" class="form-control" name="email" [(ngModel)]="contact.email">
     </div>
     <div class="form-group">
       <label>Address 1</label>
-      <input type="text" class="form-control" name="addressOne" [(ngModel)]="model.address1">
+      <input type="text" class="form-control" name="addressOne" [(ngModel)]="contact.address1">
     </div>
     <div class="form-group">
       <label>Address 2</label>
-      <input type="text" class="form-control" name="addressTwo" [(ngModel)]="model.address2">
+      <input type="text" class="form-control" name="addressTwo" [(ngModel)]="contact.address2">
     </div>
     <div class="form-group">
       <label>City</label>
-      <input type="text" class="form-control" name="city" [(ngModel)]="model.city">
+      <input type="text" class="form-control" name="city" [(ngModel)]="contact.city">
     </div>
     <div class="form-group">
       <label>State</label>
-      <input type="text" class="form-control" name="state" [(ngModel)]="model.state">
+      <input type="text" class="form-control" name="state" [(ngModel)]="contact.state">
     </div>
     <div class="form-group">
       <label>Zip Code</label>
-      <input type="text" class="form-control" name="zipCode" maxlength="5" [(ngModel)]="model.zipCode">
+      <input type="text" class="form-control" name="zipCode" maxlength="5" [(ngModel)]="contact.zipCode">
     </div>
 
     <button type="button" class="btn btn-success" (click)="save()">Save</button>
