@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row" *ngFor="let contact of contacts">
+    <!--filtering the return using the *ngIf
+      <div *ngIf="!contact.lastName.startsWith('B')"> 
+  {{ contact.firstName }} <strong>{{ contact.lastName }}</strong> </div>
+ switch statement -->
+  <!-- 
+    <div [ngSwitch]="contact.state">
+      <div *ngSwitchCase="'CA'">
+        {{contact.firstName}} is from California.
+      </div>
+      <div *ngSwitchCase="'FL'">
+        {{contact.firstName}} is from Florida.
+      </div>
+    </div>
+  </div>
+   -->
+    <div class="col-xs-4">
+      <img [src]="contact.photoUrl" alt="">
+    </div>
+    <div class="col-xs-4">
+      {{contact.firstName}} {{contact.lastName }}
+      <div>
+        {{contact.address1}}
+      </div>
+      <div>
+        {{contact.city}} {{contact.state}} {{contact.zipCode}}
+      </div>
+    </div>
+    <div class="col-xs-4">
+      {{contact.phoneNumber}}
+      <div>
+        {{contact.email}}
+      </div>
+    </div>
+  </div>
