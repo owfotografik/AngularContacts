@@ -17,5 +17,6 @@ export class HttpContactsService extends ContactsService {
 
   getContacts(): Observable<Contact[]> {
     return  this.http.get<Contact[]>('https://boisecodeworks.github.io/EveningWebDev/data/AngularContacts.json');
+  
   }
-}
+} 
